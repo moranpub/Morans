@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html>
+<title>Moran's Pubs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Moran's Pub</h1>
+  
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  
+  <!--<h5 class="w3-xxxlarge w3-animate-bottom">South Milwaukee</h5>-->
+    <img src="13.png" style="width:30%;" class="w3-animate-zoom">
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-theme-dark w3-hover-teal" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">What's on?</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h4>Drink Voucher..</h4>
+        <h5><i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-padding">
+        <p>Free shot with Pint.</p>
+        <p><a class="w3-btn" href="#"></a></p>
+      </div>
+      <footer class="w3-container w3-theme">
+        <p>Moran's Pub</p>
+      </footer>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Drinks</h3><br>
+  <img src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" style="width:30%;" class="w3-animate-zoom">
+  <!--<i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i> -->
+  <p>Specialty Ales</p>
+  <p>Cocktails</p>
+  <p>Coffee</p>
+ 
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Sports</h3><br>
+   <img src="https://cdn3.iconfinder.com/data/icons/pyconic-icons-3-1/512/soccer-ball-512.png" style="width:30%;" class="w3-animate-zoom">
+  
+  <p>Soccer</p>
+  <p>NBA</p>
+  <p>NHL</p>
+
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Atmosphere</h3><br>
+   <img src="https://cdn1.iconfinder.com/data/icons/wedding-bride-1/64/Romantic_Wedding_Ceremony_Bride-09-512.png" style="width:30%;" class="w3-animate-zoom">
+  <p>Events</p>
+  <p>Sports Teams</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-container">
+<hr>
+<div class="w3-center">
+  <h2>Events</h2>
+</div>
+
+
+<hr>
+
+
+<div class="w3-padding w3-black w3-display-container">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+  <h2>Social Media</h2>
+  
+  
+ <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMoransPubMKE%2Fvideos%2F1049033315302637%2F&show_text=1&width=560" width="100%" height="464" style="border:none;overflow:hidden" scrolling="" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe> 
+  
+<a class="twitter-timeline" data-height="500" data-theme="dark" data-link-color="#006241" href="https://twitter.com/MoransPubMKE?ref_src=twsrc%5Etfw">Tweets by MoransPubMKE</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+
+<hr>
+
+
+<h2 class="w3-center">Progress Bars</h2>
+<div class="w3-container">
+
+<div class="w3-light-grey">
+  <div id="myBar" class="w3-container w3-theme w3-padding" style="width:1%">0</div>
+</div><br>
+
+<button class="w3-btn w3-theme" onclick="move()">Click Me</button> 
+</div>
+<hr>
+
+<h2 class="w3-center">Slideshows</h2>
+<div class="w3-content" style="max-width:400px;max-height:500px;position:relative">
+
+<img class="mySlides w3-animate-opacity" src="1.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="2.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="3.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="4.jpg" style="width:100%">
+
+<a class="w3-button w3-circle w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-button w3-circle w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">&#10095;</a>
+</div>
+
+<div class="w3-container">
+<hr>
+
+</div>
+
+<hr>
+<h2 class="w3-center">Accordions</h2>
+<button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 1</button>
+<div id="Demo1" class="w3-hide">
+  <div class="w3-container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 2</button>
+<div id="Demo2" class="w3-hide">
+  <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
+  <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
+  <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
+</div>
+<button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 3</button>
+<div id="Demo3" class="w3-hide w3-black">
+  <div class="w3-container">
+    <p>Accordion with Images:</p>
+    <img src="1.jpg" style="width:30%;" class="w3-animate-zoom">
+    <p>poster</p>
+  </div>
+</div>
+
+<hr>
+<h2 class="w3-center">Tabs</h2>
+<div class="w3-border">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Drinks')">Drinks</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Snacks')">Snacks</button>
+
+</div>
+
+<div id="Drinks" class="w3-container city w3-animate-opacity">
+  <h2>Drinks</h2>
+  <p>Guest Ales</p>
+  <p>Craft Ales</p>
+  
+  
+</div>
+
+<div id="Snacks" class="w3-container city w3-animate-opacity">
+  <h2>Snacks</h2>
+  <p>Pizzas</p> 
+  <p>Bar Snacks</p>
+</div>
+
+
+
+<hr>
+<h2 class="w3-center">More</h2>
+
+<br>
+
+  </div>
+</div>
+
+</div>
+
+<hr>
+
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark">
+  <h3></h3>
+  <p>Powered by <a href="#" target="_blank">Carlin Tech</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;   
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p><a href="https://twitter.com/MoransPubMKE?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @MoransPubMKE</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+  <p>Moran's Pub&nbsp;&nbsp;<a href="w3css_references.asp" class="w3-btn w3-theme" target="_blank">So. Milwaukee </a></p>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-theme-dark", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-theme-dark";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
