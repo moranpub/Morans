@@ -21,8 +21,25 @@
 .w3-hover-text-theme:hover {color:#006241 !important}
 .w3-hover-border-theme:hover {border-color:#006241 !important}
 .w3-third   {color:#fff !important; background-color:#006241 !important}
-
+hr
+{
+	background-color:#006241 !important;
+}
 body
 {
-background-color:#B5A36A !important 	
+background-color:#B5A36A !important 
+
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(tallys.otf);
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	 font-family: myFirstFont;
+}
+* {
+   font-family: myFirstFont;
 }
